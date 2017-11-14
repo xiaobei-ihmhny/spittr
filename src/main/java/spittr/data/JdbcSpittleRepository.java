@@ -18,6 +18,10 @@ public class JdbcSpittleRepository implements SpittleRepository {
 
     private JdbcOperations jdbc;
 
+    /**
+     * 需要有DataConfig类中的JdbcOperations的bean才行！！！
+     * @param jdbc
+     */
     @Autowired
     public JdbcSpittleRepository(JdbcOperations jdbc) {
         this.jdbc = jdbc;
